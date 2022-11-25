@@ -1,0 +1,20 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astro-auth/ui": "^1.0.5",
+    "astro": "^1.6.11"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14"
+  }
+}

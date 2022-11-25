@@ -1,0 +1,43 @@
+---
+import Navigation from "./Navigation.astro";
+import Hamburger from "./Hamburger.astro"
+
+const { title } = Astro.props
+---
+
+<header>
+    <nav>
+        <div>
+            <h1>{title}</h1>
+        </div>
+        <div class="menu">
+            <Navigation />
+            <Hamburger />
+        </div>
+    </nav>
+</header>
+
+
+<style>
+    nav {
+        background: rgb(255,39,117);
+        background: linear-gradient(129deg, rgba(255,39,117,1) 0%, rgba(228,87,33,1) 90%, rgba(218,105,0,1) 100%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8rem;
+    }
+
+    h1 {
+        padding-left: 50px;
+        font-weight: 300;
+        font-size: 3rem;
+    }
+
+    .menu {
+        padding-right: 50px;
+    }
+
+</style>

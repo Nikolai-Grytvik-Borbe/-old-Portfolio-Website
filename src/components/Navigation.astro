@@ -1,0 +1,54 @@
+---
+---
+
+<div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/books/">Books</a>
+    <a href="/experience/">Experience</a>
+</div>
+
+
+<style>
+
+.nav-links {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    margin: 0 20;
+    padding: 110px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+}
+
+@media screen and (min-width: 636px) {
+    .nav-links {
+        width: 30%;
+    }
+}
+
+.nav-links a {
+    display: block;
+    padding: 20px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.nav-links a:first-child {
+    margin-top: 40px
+}
+
+.nav-links a:hover {
+    background-color: #333;
+}
+
+</style>
