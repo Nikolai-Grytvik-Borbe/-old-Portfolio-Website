@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astro-auth/ui": "^1.0.5",
+    "@astrojs/image": "^0.11.6",
     "@astrojs/react": "^1.2.2",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",

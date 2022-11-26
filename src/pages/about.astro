@@ -1,12 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from '@astrojs/image/components'
+
+import Chart from '../../static/main.png'
+import Map from "../../static/map.png";
 ---
 
 <Layout title="About">
-	<main>
+        <Image src={Chart} alt="map" width={500}/>
+        <main>
         <h2>About</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam fugit fugiat, nobis dolor corrupti laboriosam ad consequatur? Animi, adipisci magnam?</p>
         <h2>Travel</h2>
-
-	</main>
+        <Image class="image" src={Map} alt="map" width={500}/>
+        </main>
 </Layout>
+
