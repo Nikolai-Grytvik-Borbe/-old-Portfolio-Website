@@ -12,6 +12,15 @@ body {
     margin: 50px;
 }
 
+@media screen and (min-width: 636px) {
+    .main {
+        margin: auto;
+        margin-top: 50px;
+        max-width: 35rem;
+        border: solid;
+    }
+}
+
 i {
     font-weight: 100;
 }

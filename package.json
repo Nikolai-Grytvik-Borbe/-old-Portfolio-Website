@@ -12,7 +12,15 @@
   },
   "dependencies": {
     "@astro-auth/ui": "^1.0.5",
-    "astro": "^1.6.11"
+    "@astrojs/react": "^1.2.2",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "analytics": "^0.8.1",
+    "astro": "^1.6.11",
+    "highcharts": "^10.3.1",
+    "highcharts-react-official": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.14"
