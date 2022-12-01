@@ -19,6 +19,10 @@ const { title } = Astro.props
 
 
 <style>
+    header {
+        margin: 0;
+        padding: 0;
+    }
     nav {
         background: rgb(255,39,117);
         background: linear-gradient(129deg, rgba(255,39,117,1) 0%, rgba(228,87,33,1) 90%, rgba(218,105,0,1) 100%);
@@ -28,6 +32,12 @@ const { title } = Astro.props
         justify-content: space-between;
         align-items: center;
         height: 8rem;
+    }
+    
+    @media screen and (max-width: 420px) {
+        nav {
+            width: fit-content;
+        }
     }
 
     h1 {
