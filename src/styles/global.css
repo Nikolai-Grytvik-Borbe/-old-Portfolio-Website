@@ -35,10 +35,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    background-color: blue;
-}
-
 .nav-links {
     display: none;
 }

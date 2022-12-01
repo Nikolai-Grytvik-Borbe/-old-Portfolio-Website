@@ -3,11 +3,70 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Books">
-	<main>
-        <h3>Superinteligence <i>- Nick Bostrom</i></h3>
-        <p>Thoughts: is simply dummy text of the printing and typesetting industry. </p>
+    <main>
+        <center><p id="i" class="intro"><i>(ordered favorite books)</i></p></center>  
+        <script>
+            let i = document.getElementById("i")
+            
+            setTimeout(() => {
+                i.classList.add("intro2")
+            }, 4000)
+
+        </script>
+
+        <h3>East of Eden <i>⎯ John Steinbeck</i></h3>
+        <p>My favorite book. I loved the world-building, characters, and their struggles.</p>
         <br>
-        <h3>Booktitle</h3>
-        <p>Summary: is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-	</main>
+
+        <h3>What We Owe The Future <i>⎯ William Macaskill</i></h3>
+        <p>A greatly entertaining read into modern philosophy and relevant societal challenges.</p>
+        <br>
+
+        <h3>The Picture of Dorian Gray <i>⎯ Oscar Wilde</i></h3>
+        <p>The most mind bending and thought provoking book I've ever read. </p>
+        <br>
+        
+        <h3>Superinteligence <i>⎯ Nick Bostrom</i></h3>
+        <p>Thought provoking & scary. Superintelligent AI is a serious challenge that not enough people and working on. This is probably the book most people should read, but be aware, it can be quite challenging to read at times.</p>
+        <br>
+
+        <h3>Grit  <i>⎯ Angela Duckworth</i></h3>
+        <p>This book shows that practice > talent. Anyone can become anything. <br> (Talent * Effort = Skill) => (Skill * Effort = Achievement)</p>
+        <br>
+
+        <h3>Moderation in the age of greed <i>⎯ Henrik Syse</i></h3>
+        <p>Interesting read into moderation, and how by eliminating "the chase" of today's society we can achieve greater happiness.</p>
+        <br> 
+
+        <h3>The Strange Case if Dr Jekyll and Mr Hyde <i>⎯ Louis Stevenson</i></h3>
+        <p>A great read with a flabbergasting ending.</p>
+        <br> 
+
+        <h3>All Quiet on the Western Front <i>⎯ Erich Maria Remarque</i></h3>
+        <p>A quick and captivating read into the horrors of World War 1.</p>
+        <br> 
+
+        <h3>The Book of Disquiet <i>⎯ Fernando Pessoa</i></h3>
+        <p>A strange and facinating look into the mind of portugal's greatest writers.</p>
+        <br>  
+
+        <h3>Zero To One <i>⎯ Peter Thiel</i></h3>
+        <p>Might be worth the read if you want to start a TOP500 company, but I've nothing good to say about it.</p>
+        <br>  
+
+        <center><p><i>( and more )</i></p></center>
+        <br>
+    </main>
 </Layout>
+
+
+<style>
+    .intro {
+        color: white;
+        transition: 2s;
+    }
+
+    .intro2 {
+        color: #222127;
+    }
+</style>

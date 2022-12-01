@@ -7,12 +7,48 @@ import Map from "../../static/map.png";
 ---
 
 <Layout title="About">
-        <Image src={Chart} alt="map" width={500}/>
-        <main>
-        <h2>About</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam fugit fugiat, nobis dolor corrupti laboriosam ad consequatur? Animi, adipisci magnam?</p>
-        <h2>Travel</h2>
-        <Image class="image" src={Map} alt="map" width={500}/>
-        </main>
+    <Image class="image" src={Chart} width={500} alt="map" />
+    <main>
+    <h2>About</h2>
+    <p>I'm a Software Engineer from Norway. I have a passion for coding, learning, and love to experiment with things.
+    These days, I mostly write Python and a bit HTML/CSS/JS for web-development.</p>
+    <br>
+    <h2>Contact</h2>
+    <p>Send me a mail: <a class="hover-underline-animation" href="mailto: nikolaiborbe@gmail.com">nikolaiborbe@gmail.com</a></p> 
+    <br>
+    <h2>Travel</h2>
+    <p>The countries filled in red are places I've been. I hope I get to see more of the world throughout my life.</p>
+    <Image class="image" src={Map} width={500} alt="map" />
+    </main>
 </Layout>
 
+<style>
+    .image {
+        width: clamp(200px, 100%,  100%);
+        height: auto;
+    }
+
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: #999;
+    }
+
+    .hover-underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #999;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+</style>
