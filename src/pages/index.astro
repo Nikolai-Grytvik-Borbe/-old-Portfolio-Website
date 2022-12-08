@@ -41,30 +41,15 @@ import "../styles/global.css"
 			</span>
 		</button>
 
-		<script>
-			let prop = document.getElementById("learn-more") 
-			let title = document.getElementById("cont")
-			let underTitle = document.getElementById("cont1")
 
-			prop.onclick = function () {
-				prop.style.transition = "0.8s";
-				prop.classList.add("learn-more")
-				title.style.transition = "0.8s"
-				title.classList.add("fade")
-				underTitle.style.transition = "0.8s"
-				underTitle.classList.add("fade1")
-				setTimeout(() => {
-					location.href = "/about"
-				}, 800)
+		<script>
+			let el = document.getElementById("learn-more")
+
+			el.onclick = () => {
+				location.href = "/about"
 			}
-			setTimeout(() => {
-				prop.classList.remove("learn-more")
-				prop.classList.remove("fade")
-				prop.classList.remove("fade1")
-			})
 
 		</script>
-
 	</body>
 
 
